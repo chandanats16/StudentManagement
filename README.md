@@ -1,76 +1,48 @@
-# 📚 Student Management System (Java Collection Framework)
+📚 **STUDENT MANAGEMENT SYSTEM** *(Java Collection Framework)*
 
-A **Java console-based application** to manage student records using the **Collection Framework**.  
-It supports adding, updating, displaying, and deleting student details — all stored in memory using `ArrayList`.
+📝 **PROJECT DESCRIPTION**
+A **Java console-based application** for managing student records using the **Collection Framework**.  
+This program allows you to **Add**, **Update**, **Display**, and **Delete** students,  
+with all records stored in memory using `ArrayList` — no database required.
 
-## 📖 Project Flow :
-
-┌──────────────────────────┐
-│  Start Application       │
-└───────────────┬──────────┘
-                │
-                ▼
-     ┌─────────────────────┐
-     │ Display Menu         │
-     └───────┬─────────────┘
-             │
-     ┌───────▼─────────────┐
-     │ User Selects Option │
-     └───────┬─────────────┘
-             │
-   ┌─────────▼──────────┐
-   │ Add / Update /      │
-   │ Display / Delete    │
-   └─────────┬──────────┘
-             │
-      ┌──────▼───────┐
-      │ Repeat Menu? │
-      └──────┬───────┘
-             │Yes
-             ▼
-        (Back to Menu)
-             │
-             │No
-             ▼
-     ┌─────────────────────┐
-     │ Exit Application    │
-     └─────────────────────┘
-📂 Project Structure :
-
+📂 **PROJECT STRUCTURE**
 StudentManagement/
-│
-├── Student.java          # POJO for student details (ID, name, age)
-├── StudentUtility.java   # CRUD operations using Collection Framework
-├── StudentTest.java      # Main menu-driven application
+├── Student.java # POJO for student details (ID, Name, Age)
+├── StudentUtility.java # CRUD operations using Collection Framework
+├── StudentTest.java # Main menu-driven application
 
-✨ Key Features :
+✨ **KEY FEATURES**
+- ➕ **Add Student** – Store new student details.
+- ✏️ **Update Student** – Modify existing student information by ID.
+- 📜 **Display All Students** – Show all stored records in a clean format.
+- ❌ **Delete Student** – Remove a student record by ID.
+- ⚠ **Validation** – Handles invalid inputs and missing IDs.
 
-➕ Add Student – Store student details in an ArrayList.
+🛠 **TECHNOLOGIES USED**
+- ☕ **Java SE**
+- 📚 **Java Collection Framework** (`List`, `ArrayList`, `Iterator`)
+- ⌨ **Scanner** for user input
 
-✏️ Update Student – Modify student info by searching with ID.
+💡 **CONCEPTS APPLIED**
+- **Encapsulation** – Private fields with getters & setters in `Student` class.
+- **Abstraction** – Logic separated into `StudentUtility` class.
+- **Collection Framework** – Efficient in-memory storage using `ArrayList`.
+- **Iterators** – Safe traversal & deletion of elements.
+- **Control Flow** – Menu-driven looping with conditional validation.
 
-📜 Display All Students – View all records in a readable format.
+📸 SAMPLE OUTPUT
 
-❌ Delete Student – Remove a record by ID.
+		STUDENT PROJECT MANAGEMENT
+=======================================================
+1. Add Student
+2. Update Student
+3. Display All Student
+4. Delete Student
+5. Exit
 
-⚠ Validation – Handles invalid choices and missing IDs.
+Select operation:
 
-🛠️ Technologies Used :
-
-☕ Java SE
-
-📚 Java Collection Framework (List, ArrayList, Iterator)
-
-⌨ Scanner for user input
-
-💡 Concepts Applied :
-
-Encapsulation – Student class fields are private with getters & setters.
-
-Abstraction – Utility class (StudentUtility) to separate logic from UI.
-
-Collection Framework – Efficient data storage using ArrayList.
-
-Iterators – Safe traversal & removal of elements.
-
-Control Flow & Loops – Menu-driven program with validation.
+Enter student id: 101
+Enter student name: John
+Enter student age: 20
+Student Added Successfully
